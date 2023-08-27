@@ -25,9 +25,18 @@ body {
 ul {
     list-style: none;
 }
+.page-two,
+.page-four,
+.page-five,
+.six,
+.footer{
+    position: relative;
+    z-index: 10;
+}
 /*first page*/
 .page-one {
     position: sticky;
+    top: 0;
 }
 
 header nav a {
@@ -289,7 +298,9 @@ main .right>div {
 }
 
 /*page two*/
-
+.page-two{
+    background-color: var(--white);
+}
 .about h3 {
     text-transform: uppercase;
     color: var(--main-color);
@@ -340,9 +351,6 @@ main .right>div {
 }
 
 @media(max-width:767px) {
-    .page-two {
-        margin-bottom: 80px;
-    }
 
     .page-two .cards {
         flex-direction: column;
@@ -366,7 +374,6 @@ main .right>div {
 
 @media (max-width:575px) {
     .page-two {
-        margin-bottom: 30%;
         padding-bottom: 100px;
     }
 
@@ -504,7 +511,7 @@ main .right>div {
 @media (max-width:767px) {
     .page-three {
         padding-top: 20px;
-        height: 120vh;
+        height: 130vh;
     }
 
     .title p {
@@ -614,6 +621,8 @@ main .right>div {
 .page-five {
     padding-top: 50px;
     height: 100vh;
+    background-color: var(--white);
+    padding-bottom: 30px;
 }
 
 
@@ -681,6 +690,13 @@ main .right>div {
 }
 
 /*page six*/
+.six{
+    width: 100%;
+    height: 50vh;
+    margin: 0 auto;
+    padding-top: 40px;
+    background-color: var(--white);
+}
 .page-six {
     width: 80%;
     height: 30vh;
